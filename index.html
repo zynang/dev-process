@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zyn's ab testing</title>
+    <link rel="icon" href="images/flower.PNG">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+
+
+</head>
+<body>
+
+    <header id="header">
+        <h1>Working with React: Creating a Repository of My Favourite Movies</h1>
+    </header>
+
+    <main id="main">
+        <div id="intro">
+            <h2 class="sub-heading">Introduction</h2>
+            <div id="intro-content-box">
+                <p>In this project, I set out to use React to create a simple webpage that housed movies that I have seen, and allowed me to place them in a cart of 'my favorites'               
+               </p>
+            </div>               
+                
+           
+            
+
+        </div>
+        <div id="usability">
+            <div class="content-box">
+                <h2 class="sub-heading">Background</h2>
+                
+                <div class="images-content">
+                    <p> I began my process by analyzing different websites, which helped me figure out what I liked about different 'favoriting' designs. 
+                    </p>
+                    <h3>My Chosen Websites: Uniqlo, Spotify, and Facebook</h3>
+                    <div id="compare-container">
+                        <div class="image">
+                            <a href="https://www.uniqlo.com/us/en/women/outerwear-and-blazers">
+                                <img src="images/uniqlo.png" alt="Screenshot of Uniqlo's Website" />
+                            </a>                            
+                            <h3>Uniqlo</h3>
+                            <p>click to be redirected to website</p>
+                        </div>
+                        <div class="image">
+                            <a href="https://open.spotify.com/">
+                                <img src="images/spotify.png" alt="Screenshot of Spotify's Website" />
+                            </a>
+                            <h3>Spotify</h3>
+                            <p>click to be redirected to website</p>
+                        </div>
+                        <div class="image">
+                            <a href="https://www.facebook.com/">
+                                <img src="images/facebook.png" alt="Screenshot of Facebook's Website" />
+                            </a>                            
+                            <h3>Facebook</h3>
+                            <p>click to be redirected to website</p>
+                        </div>
+                    </div>
+
+
+                    <h3>Comparison table for features</h3>
+                    
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>
+        
+                                </td>
+                                <td>
+                                    Uniqlo
+                                </td>
+                                <td>
+                                    Spotify
+                                </td>
+                                <td>
+                                    Facebook
+                                </td>
+                               </tr>
+                        </thead>
+                       
+                       <tr>
+                        <td>
+                            <b>Favoriting option displayed on the item card</b>
+                        </td>
+                        <td>
+                            Denoted with an unfilled ♡ icon.
+                        </td>
+                        <td>
+                            Denoted with an unfilled ♡ icon.
+                        </td>
+                        <td>
+                            Denoted with an unfilled 👍icon
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>
+                            <b>Number of clicks required for item to be placed into ‘favorites’</b>
+                        </td>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            1
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>
+                            <b>Number of clicks required to access favorites list</b>
+                        </td>
+                        <td>
+                           1
+                        </td>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            4 (in an extremely un-intuitive process)
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>
+                            <b>Favorites aggregator situated on a separate web page from item cards</b>
+                        </td>
+                        <td>
+                            Yes, visible (easily found) and separate from the shopping cart (stored in “Wishlist”).
+                        </td>
+                        <td>
+                            Yes, but fairly difficult to find (stored in “Liked Songs”).
+                        </td>
+                        <td>
+                            Yes, but extremely difficult to find (stored in “Activity Log” - “Pages, page likes and interests”)
+                        </td>
+                       </tr>
+
+                       <tr>
+                        <td>
+                            <b>Clear indication that an item has been favorited on the primary form of item card display (i.e. product display or playlist)</b>
+                        </td>
+                        <td>
+                            Once the ♡ icon has been clicked, the item is placed in the favorites list, but there is no visible change to the item card in the main display. However, within the favorite list web page, there is a filled heart icon ♥ attached to the item card.
+                        </td>
+                        <td>
+                            Once the ♡ icon has been clicked, the item is placed in the favorites list, and there is a visible change to the item card (heart icon is filled solid ♥).
+                        </td>
+                        <td>
+                            Once the 👍icon has been clicked, the item is placed in the favorites list, and there is a visible change to the item card (👍 icon is filled solid).
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>
+                            <b>How is an item removed from a favorites list?</b>
+                        </td>
+                        <td>
+                            Only within the favorites list web page, clicking on the filled heart icon ♥ so it becomes unfilled ♡ removes the item from the favorites list.m <br> There is no explanatory tag attached to the heart icon, so the user is not explicitly told that clicking the filled heart icon would cause the item to be removed from the favorites list
+                        </td>
+                        <td>
+                            Clicking on the filled heart icon ♥ on the item card at any page of the app (playlists, search results, albums) so it becomes unfilled ♡ removes the item from the favorites list. <br> An explanatory tag accompanies the heart icon (“Save to Your Library” or “Remove from Your Library”, depending on fill status of heart icon) so the user is explicitly told what would happen if the heart icon were clicked.
+
+                        </td>
+                        <td>
+                            Clicking on the filled 👍icon on the item card at any page of the app so it becomes unfilled removes the item from the favorites list.<br>
+                            An explanatory tag accompanies the 👍 icon (“Like’). But there is no corresponding “Unlike” tag.
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>
+                            <b>Is there a way to filter/sort the favorites list?</b>
+                        </td>
+                        <td>
+                            No
+                        </td>
+                        <td>
+                            Yes. It can be sorted by Title, Artist, Album and Recently Added.
+                        </td>
+                        <td>
+                            Yes. It can be filtered by posts, pages, etc.
+                        </td>
+                       </tr>
+                      
+                    </table>
+
+
+                    <h3>Summary of Findings (what worked? what didn't?)</h3>
+                    <p>
+                        I discovered that the favoriting function was common across websites/apps that served different functions. In my comparison chart above, we have an e-commerce site (uniqlo), a music streaming site (spotify) and a social media platform (facebook). Facebook is iconic in this realm for pioneering the successful use of the “like” button. 
+                        <br><br>
+                        
+                        The most successful feature of the uniqlo website was the visibility of the “favoriting” icon, and the ease of access to the favorites list (the “wishlist”). However, I felt that the connection between the two features was unintuitive (it is unclear what the “wishlist” tab was for, until a user clicks on a “favoriting” icon), and I disliked the fact that the user was only able to “un-favorite” the icon within the wishlist.
+                        <br><br>
+                        The most successful feature of the spotify website is the visibility of the “favoriting” icon, especially since the fact that a user has liked a song would be visible throughout the app (as evidenced by a bright green filled heart icon). This allows the user to easily like/un-like songs, without having to enter the favorites list just to do that. On the other hand, I felt that the favorites list (the “Liked Songs” playlist) was not obviously and intuitively situated on the webpage. If a user has multiple playlists, the “Liked Songs” playlist would be relegated to the bottom of the pile of a user’s saved playlists. This makes it difficult for the user to quickly access and view all the songs that they have liked before. Additionally, users are unable to like entire albums/playlists, as the feature is only available to individual songs.
+                        <br><br>
+                        The most successful feature of the facebook website is the visibility of the “favoriting” icon, and the clear indications/tags that accompany it for the sake of informing users of its function. The user is also easily able to like/unlike posts by clicking on the “favoriting” icon attached to the item directly, instead of needing to navigate to a separate webpage. On the flip side, it was extremely difficult to find a user’s list of favorited items (it involved a 4-click process, which users would not intuitively be able to complete without the help of a search engine query), making the point of favoriting and aggregating these items less clear (unless we look at this issue from the company’s data collection perspective, rather than user interest). 
+                        </p>
+
+                    <h3>Designs to Implement</h3>
+                    <ul>
+                        <li>1 click process of “favoriting” and “unfavoriting” of each item by toggling the favoriting icon on the item card anywhere in the webpage (not just within the favorites list webpage)</li>
+                        <li>Easy way to remove all favorites, since this was not available in any of the webpages researched</li>
+                        <li>Visible and easily accessible 'favorites' list (unlike facebook's, which required 5 clicks across different pages)</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="sketches">
+            <div class="content-box">
+                <h2 class="sub-heading">My Webpage</h2>
+                <h3>App Overview</h3>
+                <p>I decided to create an app that stores movies that I have seen before, and allows me to place my 'favorites' in a favorites cart by the side of the same page.</p>
+                <p>My app is able to filter movies by Year, Genre and Ratings, and can do any combination of these filters simultaneously. To reset the filters, simply click the "All Genres", "All Years" or "All Ratings" option at the top of each drop down menu.</p>
+                <p>My app is also able to sort the movies by rating (high to low), or alphabetically by movie name (default). To reset the sort to the default option, simply toggle the sorting button.</p>
+                <p>I have also designed it such that Filter and Sort can work together (eg. Sort by Ratings and Filter by Genre simultaneously).</p>
+                <p>Each movie card comes with a 'like' button that can be clicked or unclicked to add the movie to your favorites cart. Unliking the card will automatically remove the movie from the cart, there is also a button in the cart to clear the entire cart of movies. There is an aggregator at the bottom of the cart that counts the number of movies in the favorites cart so far.</p>
+                
+                <a href="https://development-woad-five.vercel.app/">
+                    <h3>Link to App</h3>
+                </a>
+                
+            </div>
+        </div>     
+       
+    </main>
+
+
+
+
+
+    <footer id="footer">
+        <div id="copyright">
+            <li>&copy; Zyn's Portfolio. All rights reserved</li>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+</body>
+</html>
